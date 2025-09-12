@@ -4,7 +4,7 @@
 int main() {
     setlocale(LC_ALL, "Russian");
     int a, b, c;
-    printf("Введите длинну гепотинузы треугольника: ");
+    printf("Введите длинну гипотенузы треугольника: ");
     scanf_s("%d", &a);
     printf("Введите длинну стороны треугольника: ");
     scanf_s("%d", &b);
@@ -24,6 +24,7 @@ int main() {
 
 
     return 0;
+
 
 
 }
