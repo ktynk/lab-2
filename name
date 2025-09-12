@@ -1,15 +1,1 @@
-#include <stdio.h>
-#include  <math.h>
-#include <locale.h>
-int main(){
-    setlocale(LC_ALL, "ru_RU.UTF-8");
-    int a, b, c;
-    printf("введите длины сторон c-гепотенуза");
-    scanf_s("%d %d %d", &c, &a, &b);
-    if (pow(c,2) = pow(a,2)+pow(b,2))
-    {
-        printf("треугольник прямоугольный\n");
-        return 1;
 
-    }
-}
