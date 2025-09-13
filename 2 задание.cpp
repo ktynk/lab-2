@@ -1,4 +1,3 @@
-﻿
 
 #include <stdio.h>
 #include <math.h>
@@ -27,5 +26,6 @@ if (y>0){
 
    
 }
+
 
 
