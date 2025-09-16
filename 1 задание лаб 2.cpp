@@ -3,7 +3,8 @@
 #include <locale.h>
 int main() {
     setlocale(LC_ALL, "Russian");
-    double x1, x2, x3, y1, y2, y3, AB, BC, CA, a, b, c, d,Z;
+    double x1, x2, x3, y1, y2, y3, AB, BC, CA, a, b, c, d,Z,E;
+    const double E = 1e-9;
     printf("введите координаты по порядку(x1 и y1):");
     scanf_s("%lf", &x1);
     printf("введите координаты по порядку(x2 и y2):");
@@ -34,6 +35,7 @@ int main() {
         a = BC;
         b = AB;
     }
+    if(fabs(c) < E){
 
     if (pow(a, 2) + pow(b, 2) == pow(c, 2))
         printf("Прямоугольный треугольник");
@@ -45,5 +47,7 @@ int main() {
     printf("%lf=\n", d);
     Z = pow(c, 2);
     printf("%lf=\n", Z);
+    }
         return 0;
 }
+
