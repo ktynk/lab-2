@@ -3,7 +3,7 @@
 #include <locale.h>
 int main() {
     setlocale(LC_ALL, "Russian");
-    double x1, x2, x3, y1, y2, y3, AB, BC, CA, a, b, c, d,Z,E;
+    double x1, x2, x3, y1, y2, y3, AB, BC, CA, a, b, c, d,Z;
     const double E = 1e-9;
     printf("введите координаты по порядку(x1 и y1):");
     scanf_s("%lf", &x1);
@@ -50,4 +50,5 @@ int main() {
     }
         return 0;
 }
+
 
