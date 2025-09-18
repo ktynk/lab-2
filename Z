@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include <locale.h>
+#include <windows.h>
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+setConsoleOutputCP(CP_UTF8);
+SetConsoleCP(CP_UTF8);
+char words[]= {
+"июнь","июль","август","сентябрь",октябрь,ноябрь,декабрь,январь,февраль,март,"апрель","май"}
