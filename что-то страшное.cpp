@@ -5,7 +5,7 @@ int main() {
     setlocale(LC_ALL, "Russian");
     double x1, x2,x3, y1, y2,y3, AB, BC, CA;
     printf("введите координаты по порядку(x и y)");
-    scanf_s("%lf %lf %lf %lf %lf %lf  ", &x1, &y1, &x2, &y2,&x3,&y3);
+    scanf_s("%lf %lf %lf %lf %lf %lf", &x1, &y1, &x2, &y2,&x3,&y3);
 
     AB = sqrt(pow((x2 - x1),2)+pow((y2-y1),2));
     CA = sqrt(pow((x3 - x1), 2) + pow((y3 - y1), 2));
@@ -53,4 +53,5 @@ int main() {
 
 
     return 0;
+
 }
