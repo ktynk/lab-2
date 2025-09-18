@@ -20,6 +20,11 @@ int main() {
     AB = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
     CA = sqrt(pow((x3 - x1), 2) + pow((y3 - y1), 2));
     BC = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+    if (AB+BC<=CA+E||AB+CA<=BC+E ||CA+BC<=AB+E)
+    {
+        
+        printf("треугольник не существует\n");
+        return 1;}
     if (AB > BC && AB > CA) {
         c = AB;
         a = CA;
@@ -34,10 +39,9 @@ int main() {
         c = CA;
         a = BC;
         b = AB;
+        
     }
-    if(fabs(c) < E){
-
-    if (pow(a, 2) + pow(b, 2) == pow(c, 2))
+    if (fabs(pow(a, 2) + pow(b, 2)-pow(c,2)<E))
         printf("Прямоугольный треугольник");
     else if (pow(+a, 2) + pow(b, 2) > pow(c, 2))
         printf("Остроугольный треугольник");
@@ -50,5 +54,6 @@ int main() {
     }
         return 0;
 }
+
 
 
