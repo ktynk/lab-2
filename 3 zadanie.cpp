@@ -13,7 +13,7 @@ int main() {
     printf("Введите название поры года:");  
     scanf_s("%5s", words, (unsigned)sizeof(words));  
 
-    if (strcmp(words, "зима") == 0)   // исправлено: убрал "_" перед "зима"
+    if (strcmp(words, "зима") == 0)   
         printf("Декабрь Январь Февраль\n");
     
     else if (strcmp(words, "осень") == 0) 
@@ -31,4 +31,5 @@ int main() {
     
 
     return 0;
+
 }
