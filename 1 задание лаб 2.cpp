@@ -41,7 +41,7 @@ int main() {
         b = AB;
         
     }
-    if (fabs(pow(a, 2) + pow(b, 2)-pow(c,2)<E))
+    if (fabs(pow(a, 2) + pow(b, 2)-pow(c,2))<E)
         printf("Прямоугольный треугольник");
     else if (pow(+a, 2) + pow(b, 2) > pow(c, 2))
         printf("Остроугольный треугольник");
@@ -54,6 +54,7 @@ int main() {
     }
         return 0;
 }
+
 
 
 
