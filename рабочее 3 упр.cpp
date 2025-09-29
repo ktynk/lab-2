@@ -15,7 +15,7 @@ int main() {
     wchar_t words[6] = L"";  // буфер для широких символов
 
     wprintf(L"Введите название поры года: ");
-    wscanf_s(L"%5ls", words, (unsigned)_countof(words));  // _countof - макрос для подсчета элементов массива
+    wscanf_s(L"%5ls", words, 6);
 
     if (wcscmp(words, L"зима") == 0) {
         wprintf(L"Декабрь Январь Февраль\n");
@@ -35,4 +35,5 @@ int main() {
     }
 
     return 0;
+
 }
