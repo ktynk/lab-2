@@ -11,7 +11,7 @@ int main() {
 
     char words[6] = "";  
     printf("Введите название поры года:");  
-    scanf_s("%5s", words, (unsigned)sizeof(words));  
+    scanf_s("%5s", words, 6);  
 
     if (strcmp(words, "зима") == 0)   
         printf("Декабрь Январь Февраль\n");
@@ -33,3 +33,4 @@ int main() {
     return 0;
 
 }
+
